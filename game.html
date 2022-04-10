@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="gameStyle.css">
+</head>
+
+<body class="border">
+
+    <div class="container border">
+        <!-- Labels -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 infoLabel">
+                    <h3>Last Date:</h3>
+                    <span id="date"></span>
+                </div>
+
+                <div class="col-md-2 infoLabel">
+                    <h3>Player:</h3>
+                    <span id="userName"></span>
+                </div>
+
+                <div class="col-md-2 infoLabel">
+                    <h3>Score:</h3>
+                    <span id="score">0</span>
+                </div>
+                
+                <div class="col-md-2 infoLabel">
+                    <h3>Target:</h3>
+                    <span id="target"></span>
+                </div>
+
+                <div class="col-md-2 infoLabel">
+                    <h3>Timer:</h3>
+                    <span id="timer"></span>
+                </div>
+
+                <div id="gameEnded" class="overlay">
+                    <div class="popupGameEnded">
+                        <div class="">
+                            <span>Score : </span>
+                            <span class="finalScore"> 5 </span>
+                            <span> / </span>
+                            <span class="target"> 5 </span>
+                        </div>
+                        <img class="winnerOrLoser" src="" alt="">
+                        <button class="homeButton">HOME</button>
+                    </div>
+                </div>            
+
+            </div>
+        </div>
+
+        
+        <!-- Monkey -->
+        <img src="images/monkey.png" alt="monkey" class="monkey">
+        
+    </div>
+
+    <script src="index.js"></script>
+    <script src="functionsScript.js"></script>
+
+</body>
+
+</html>
